@@ -6,6 +6,8 @@ import Greet from './Greet';
 import Input from './Input';
 import Parent from './Parent';
 import Status from './Status';
+import Style from './Style';
+import UseStateFuture from './UseStateFuture';
 
 function App() {
   
@@ -42,6 +44,8 @@ function App() {
         </Parent>
         <Button handleClick={(event,id)=>{console.log("Clicked!!",event,id)}}/>
         <Input value='' handleChange={(event)=>console.log(event)}/>
+        <Style style={{"color":"red","backgroundColor":"red"}}/>
+        <UseStateFuture/>
     </div>
   );
 }
