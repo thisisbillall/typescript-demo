@@ -3,6 +3,7 @@ import './App.css';
 import Button from './Button';
 import ChildrenProp from './ChildrenProp';
 import Greet from './Greet';
+import Input from './Input';
 import Parent from './Parent';
 import Status from './Status';
 
@@ -40,6 +41,7 @@ function App() {
           <ChildrenProp>Hello I am Child from Parent</ChildrenProp>
         </Parent>
         <Button handleClick={(event,id)=>{console.log("Clicked!!",event,id)}}/>
+        <Input value='' handleChange={(event)=>console.log(event)}/>
     </div>
   );
 }
