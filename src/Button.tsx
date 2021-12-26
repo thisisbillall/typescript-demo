@@ -1,11 +1,11 @@
 type ButtonProp={
 
-    handleClick:()=>void
+    handleClick:(event:React.MouseEvent,id:number)=>void
 };
 export default function Button(props:ButtonProp){
     return(
         <>
-            <button onClick={props.handleClick}>Click Me</button>
+            <button onClick={(event)=>props.handleClick(event,1)}>Click Me</button>
         </>
     );
 };

@@ -39,7 +39,7 @@ function App() {
         <Parent>
           <ChildrenProp>Hello I am Child from Parent</ChildrenProp>
         </Parent>
-        <Button handleClick={()=>{console.log("Clicked!!")}}/>
+        <Button handleClick={(event,id)=>{console.log("Clicked!!",event,id)}}/>
     </div>
   );
 }
