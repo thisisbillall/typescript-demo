@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Private from './auth/Private';
 import Button from './Button';
 import ChildrenProp from './ChildrenProp';
 import { Counter } from './class/Counter';
@@ -9,6 +10,7 @@ import Parent from './Parent';
 import Status from './Status';
 import Style from './Style';
 import UseStateFuture from './UseStateFuture';
+import Profile from './auth/Profile';
 
 function App() {
   
@@ -48,6 +50,7 @@ function App() {
         <Style style={{"color":"red","backgroundColor":"red"}}/>
         <UseStateFuture/>
         <Counter message='Count'/>
+        <Private isLoggedIn={true} Component={Profile}/>
     </div>
   );
 }
