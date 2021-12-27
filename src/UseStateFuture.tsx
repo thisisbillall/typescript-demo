@@ -6,7 +6,7 @@ type AuthUser={
 
 export default function UseStateFuture(){
 
-    const [user,setUser] = useState<null | AuthUser>(null);
+    const [user,setUser] = useState<null | AuthUser >(null);
 
     return(
         <>

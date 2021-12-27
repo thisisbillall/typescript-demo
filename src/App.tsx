@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Button from './Button';
 import ChildrenProp from './ChildrenProp';
+import { Counter } from './class/Counter';
 import Greet from './Greet';
 import Input from './Input';
 import Parent from './Parent';
@@ -46,6 +47,7 @@ function App() {
         <Input value='' handleChange={(event)=>console.log(event)}/>
         <Style style={{"color":"red","backgroundColor":"red"}}/>
         <UseStateFuture/>
+        <Counter message='Count'/>
     </div>
   );
 }
