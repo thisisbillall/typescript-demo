@@ -13,6 +13,7 @@ import UseStateFuture from './UseStateFuture';
 import Profile from './auth/Profile';
 import List from './Generic/List';
 import RandomNum from './restrict/RandomNum';
+import Toast from './tempLiterals/Toast';
 
 function App() {
   
@@ -56,6 +57,7 @@ function App() {
         <List list={[1,2,3,4]
       } onClick={(e)=>console.log(e)}/>
       <RandomNum num={10} isPositive />
+      <Toast position='Center'/>
     </div>
   );
 }
