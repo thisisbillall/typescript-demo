@@ -12,6 +12,7 @@ import Style from './Style';
 import UseStateFuture from './UseStateFuture';
 import Profile from './auth/Profile';
 import List from './Generic/List';
+import RandomNum from './restrict/RandomNum';
 
 function App() {
   
@@ -53,9 +54,8 @@ function App() {
         <Counter message='Count'/>
         <Private isLoggedIn={true} Component={Profile}/>
         <List list={[1,2,3,4]
-
-      
       } onClick={(e)=>console.log(e)}/>
+      <RandomNum num={10} isPositive />
     </div>
   );
 }

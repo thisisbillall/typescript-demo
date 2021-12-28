@@ -1,8 +1,7 @@
-type ListProps={
+type ListProps ={
 
-    list:string[] | number[],
-    onClick:(value:string | number)=>void
-
+    list:string[]|number[],
+    onClick:(value:string|number)=>void
 };
 
 export default function List(props:ListProps){
