@@ -11,6 +11,7 @@ import Status from './Status';
 import Style from './Style';
 import UseStateFuture from './UseStateFuture';
 import Profile from './auth/Profile';
+import List from './Generic/List';
 
 function App() {
   
@@ -51,6 +52,10 @@ function App() {
         <UseStateFuture/>
         <Counter message='Count'/>
         <Private isLoggedIn={true} Component={Profile}/>
+        <List list={[1,2,3,4]
+
+      
+      } onClick={(e)=>console.log(e)}/>
     </div>
   );
 }
